@@ -478,3 +478,128 @@ created by net/http.(*Server).Serve
 [negroni] 2019-12-15T16:07:06Z | 200 | 	 201.98µs | 13.231.232.235:3000 | GET /add
 [negroni] 2019-12-15T16:07:06Z | 200 | 	 214.083µs | 13.231.232.235:3000 | GET /add
 signal: killed
+2019/12/15 17:24:58 Listening:
+[negroni] listening on :3000
+2019/12/15 17:25:09 Inside Show One
+2019/12/15 17:25:09 [God Of War]
+[negroni] 2019-12-15T17:25:09Z | 200 | 	 1.320903355s | 13.231.232.235:3000 | POST /show
+[negroni] 2019-12-15T17:25:10Z | 304 | 	 112.355µs | 13.231.232.235:3000 | GET /src/css/bootstrap.min.css
+[negroni] 2019-12-15T17:25:10Z | 304 | 	 63.542µs | 13.231.232.235:3000 | GET /src/css/animate.css
+[negroni] 2019-12-15T17:25:10Z | 304 | 	 49.918µs | 13.231.232.235:3000 | GET /src/css/owl.carousel.min.css
+[negroni] 2019-12-15T17:25:10Z | 304 | 	 46.789µs | 13.231.232.235:3000 | GET /src/css/themify-icons.css
+[negroni] 2019-12-15T17:25:10Z | 304 | 	 35.151µs | 13.231.232.235:3000 | GET /src/css/liner_icon.css
+[negroni] 2019-12-15T17:25:10Z | 304 | 	 40.903µs | 13.231.232.235:3000 | GET /src/css/search.css
+[negroni] 2019-12-15T17:25:10Z | 304 | 	 62.022µs | 13.231.232.235:3000 | GET /src/css/style.css
+[negroni] 2019-12-15T17:25:10Z | 304 | 	 56.798µs | 13.231.232.235:3000 | GET /src/images/image001.png
+[negroni] 2019-12-15T17:25:10Z | 304 | 	 37.719µs | 13.231.232.235:3000 | GET /src/images/DCKuPkdXYAA0jiO.jpg
+[negroni] 2019-12-15T17:25:10Z | 200 | 	 217.682µs | 13.231.232.235:3000 | GET /favicon.ico
+2019/12/15 17:25:13 Inside Show One
+2019/12/15 17:25:13 HereGet
+[negroni] 2019-12-15T17:25:13Z | 200 | 	 477.638µs | 13.231.232.235:3000 | GET /show
+[negroni] 2019-12-15T17:25:13Z | 200 | 	 208.268µs | 13.231.232.235:3000 | GET /favicon.ico
+[negroni] 2019-12-15T17:25:15Z | 200 | 	 219.158µs | 13.231.232.235:3000 | GET /
+[negroni] 2019-12-15T17:25:16Z | 200 | 	 236.316µs | 13.231.232.235:3000 | GET /add
+2019/12/15 17:25:17 Here Show All
+2019/12/15 17:25:19 [{ObjectIdHex("5df66a90fe049b1121827b19") GOD OF WAR PS4 FIGHTING 01-JUL-2018 4 Sony Interactive Entertainment ./src/images/DCKuPkdXYAA0jiO.jpg}]
+[negroni] 2019-12-15T17:25:17Z | 200 | 	 1.243021439s | 13.231.232.235:3000 | GET /showAll
+2019/12/15 17:25:20 Inside Show One
+2019/12/15 17:25:20 HereGet
+[negroni] 2019-12-15T17:25:20Z | 200 | 	 375.54µs | 13.231.232.235:3000 | GET /show
+[negroni] 2019-12-15T17:25:20Z | 200 | 	 205.647µs | 13.231.232.235:3000 | GET /favicon.ico
+2019/12/15 17:25:22 Inside Show One
+2019/12/15 17:25:22 HereGet
+[negroni] 2019-12-15T17:25:22Z | 200 | 	 364.502µs | 13.231.232.235:3000 | GET /show
+[negroni] 2019-12-15T17:25:22Z | 200 | 	 209.389µs | 13.231.232.235:3000 | GET /favicon.ico
+2019/12/15 17:25:23 Inside Show One
+2019/12/15 17:25:23 HereGet
+[negroni] 2019-12-15T17:25:23Z | 200 | 	 354.463µs | 13.231.232.235:3000 | GET /show
+[negroni] 2019-12-15T17:25:23Z | 200 | 	 186.173µs | 13.231.232.235:3000 | GET /favicon.ico
+2019/12/15 17:25:23 Inside Show One
+2019/12/15 17:25:23 HereGet
+[negroni] 2019-12-15T17:25:23Z | 200 | 	 391.547µs | 13.231.232.235:3000 | GET /show
+[negroni] 2019-12-15T17:25:23Z | 200 | 	 183.672µs | 13.231.232.235:3000 | GET /favicon.ico
+2019/12/15 17:25:23 Inside Show One
+2019/12/15 17:25:23 HereGet
+[negroni] 2019-12-15T17:25:23Z | 200 | 	 380.153µs | 13.231.232.235:3000 | GET /show
+[negroni] 2019-12-15T17:25:24Z | 200 | 	 210.218µs | 13.231.232.235:3000 | GET /favicon.ico
+[negroni] 2019-12-15T17:25:25Z | 200 | 	 246.064µs | 13.231.232.235:3000 | GET /add
+2019/12/15 17:25:26 Here Show All
+2019/12/15 17:25:27 [{ObjectIdHex("5df66a90fe049b1121827b19") GOD OF WAR PS4 FIGHTING 01-JUL-2018 4 Sony Interactive Entertainment ./src/images/DCKuPkdXYAA0jiO.jpg}]
+[negroni] 2019-12-15T17:25:26Z | 200 | 	 1.207907581s | 13.231.232.235:3000 | GET /showAll
+2019/12/15 17:25:28 Inside Show One
+2019/12/15 17:25:28 HereGet
+[negroni] 2019-12-15T17:25:28Z | 200 | 	 389.518µs | 13.231.232.235:3000 | GET /show
+[negroni] 2019-12-15T17:25:28Z | 200 | 	 193.062µs | 13.231.232.235:3000 | GET /favicon.ico
+2019/12/15 17:25:32 Inside Show One
+2019/12/15 17:25:32 [God Of War]
+[negroni] 2019-12-15T17:25:32Z | 200 | 	 1.316343057s | 13.231.232.235:3000 | POST /show
+[negroni] 2019-12-15T17:25:33Z | 200 | 	 216.485µs | 13.231.232.235:3000 | GET /favicon.ico
+2019/12/15 17:25:36 Inside Show One
+2019/12/15 17:25:36 HereGet
+[negroni] 2019-12-15T17:25:36Z | 200 | 	 382.852µs | 13.231.232.235:3000 | GET /show
+[negroni] 2019-12-15T17:25:36Z | 200 | 	 196.905µs | 13.231.232.235:3000 | GET /favicon.ico
+2019/12/15 17:25:40 Inside Show One
+2019/12/15 17:25:40 HereGet
+[negroni] 2019-12-15T17:25:40Z | 200 | 	 356.6µs | 13.231.232.235:3000 | GET /show
+[negroni] 2019-12-15T17:25:41Z | 200 | 	 197.305µs | 13.231.232.235:3000 | GET /favicon.ico
+2019/12/15 17:25:41 Inside Show One
+2019/12/15 17:25:41 HereGet
+[negroni] 2019-12-15T17:25:41Z | 200 | 	 349.839µs | 13.231.232.235:3000 | GET /show
+[negroni] 2019-12-15T17:25:41Z | 200 | 	 206.344µs | 13.231.232.235:3000 | GET /favicon.ico
+2019/12/15 17:25:41 Inside Show One
+2019/12/15 17:25:41 HereGet
+[negroni] 2019-12-15T17:25:41Z | 200 | 	 363.106µs | 13.231.232.235:3000 | GET /show
+[negroni] 2019-12-15T17:25:42Z | 200 | 	 223.792µs | 13.231.232.235:3000 | GET /favicon.ico
+2019/12/15 17:25:42 Inside Show One
+2019/12/15 17:25:42 HereGet
+[negroni] 2019-12-15T17:25:42Z | 200 | 	 363.136µs | 13.231.232.235:3000 | GET /show
+[negroni] 2019-12-15T17:25:42Z | 200 | 	 201.743µs | 13.231.232.235:3000 | GET /favicon.ico
+2019/12/15 17:25:42 Inside Show One
+2019/12/15 17:25:42 HereGet
+[negroni] 2019-12-15T17:25:42Z | 200 | 	 371.492µs | 13.231.232.235:3000 | GET /show
+[negroni] 2019-12-15T17:25:42Z | 200 | 	 192.63µs | 13.231.232.235:3000 | GET /favicon.ico
+2019/12/15 17:25:42 Inside Show One
+2019/12/15 17:25:42 HereGet
+[negroni] 2019-12-15T17:25:42Z | 200 | 	 372.919µs | 13.231.232.235:3000 | GET /show
+[negroni] 2019-12-15T17:25:43Z | 200 | 	 186.915µs | 13.231.232.235:3000 | GET /favicon.ico
+2019/12/15 17:25:43 Inside Show One
+2019/12/15 17:25:43 HereGet
+[negroni] 2019-12-15T17:25:43Z | 200 | 	 350.924µs | 13.231.232.235:3000 | GET /show
+[negroni] 2019-12-15T17:25:43Z | 200 | 	 216.002µs | 13.231.232.235:3000 | GET /favicon.ico
+2019/12/15 17:25:44 Inside Show One
+2019/12/15 17:25:44 HereGet
+[negroni] 2019-12-15T17:25:44Z | 200 | 	 362.321µs | 13.231.232.235:3000 | GET /show
+[negroni] 2019-12-15T17:25:44Z | 200 | 	 49.366µs | 13.231.232.235:3000 | GET /src/css/owl.carousel.min.css
+[negroni] 2019-12-15T17:25:44Z | 200 | 	 84.341µs | 13.231.232.235:3000 | GET /src/css/themify-icons.css
+[negroni] 2019-12-15T17:25:44Z | 200 | 	 102.575µs | 13.231.232.235:3000 | GET /src/css/liner_icon.css
+[negroni] 2019-12-15T17:25:44Z | 200 | 	 43.448µs | 13.231.232.235:3000 | GET /src/css/search.css
+[negroni] 2019-12-15T17:25:44Z | 200 | 	 161.622µs | 13.231.232.235:3000 | GET /src/images/image001.png
+[negroni] 2019-12-15T17:25:44Z | 200 | 	 427.54359ms | 13.231.232.235:3000 | GET /src/css/animate.css
+[negroni] 2019-12-15T17:25:44Z | 200 | 	 804.872441ms | 13.231.232.235:3000 | GET /src/css/style.css
+[negroni] 2019-12-15T17:25:44Z | 200 | 	 2.390637734s | 13.231.232.235:3000 | GET /src/css/bootstrap.min.css
+[negroni] 2019-12-15T17:25:47Z | 200 | 	 219.907µs | 13.231.232.235:3000 | GET /favicon.ico
+2019/12/15 17:25:52 Inside Show One
+2019/12/15 17:25:52 HereGet
+[negroni] 2019-12-15T17:25:52Z | 200 | 	 402.11µs | 13.231.232.235:3000 | GET /show
+[negroni] 2019-12-15T17:25:52Z | 200 | 	 62.884µs | 13.231.232.235:3000 | GET /src/css/owl.carousel.min.css
+[negroni] 2019-12-15T17:25:52Z | 200 | 	 126.469µs | 13.231.232.235:3000 | GET /src/css/themify-icons.css
+[negroni] 2019-12-15T17:25:52Z | 200 | 	 82.803µs | 13.231.232.235:3000 | GET /src/css/liner_icon.css
+[negroni] 2019-12-15T17:25:52Z | 200 | 	 112.213µs | 13.231.232.235:3000 | GET /src/css/search.css
+[negroni] 2019-12-15T17:25:53Z | 200 | 	 214.84µs | 13.231.232.235:3000 | GET /src/images/image001.png
+[negroni] 2019-12-15T17:25:52Z | 200 | 	 555.18981ms | 13.231.232.235:3000 | GET /src/css/bootstrap.min.css
+[negroni] 2019-12-15T17:25:52Z | 200 | 	 1.076704812s | 13.231.232.235:3000 | GET /src/css/animate.css
+[negroni] 2019-12-15T17:25:52Z | 200 | 	 2.003239656s | 13.231.232.235:3000 | GET /src/css/style.css
+[negroni] 2019-12-15T17:25:55Z | 200 | 	 247.16µs | 13.231.232.235:3000 | GET /favicon.ico
+2019/12/15 17:27:04 Inside Show One
+2019/12/15 17:27:04 HereGet
+[negroni] 2019-12-15T17:27:04Z | 200 | 	 338.474µs | 13.231.232.235:3000 | GET /show
+[negroni] 2019-12-15T17:27:04Z | 200 | 	 181.352µs | 13.231.232.235:3000 | GET /favicon.ico
+2019/12/15 17:27:08 Inside Show One
+2019/12/15 17:27:08 [efwf]
+[negroni] 2019-12-15T17:27:08Z | 200 | 	 1.19460853s | 13.231.232.235:3000 | POST /show
+[negroni] 2019-12-15T17:27:10Z | 200 | 	 204.509µs | 13.231.232.235:3000 | GET /favicon.ico
+2019/12/15 17:27:12 Inside Show One
+2019/12/15 17:27:12 [God Of War]
+[negroni] 2019-12-15T17:27:12Z | 200 | 	 1.310697379s | 13.231.232.235:3000 | POST /show
+[negroni] 2019-12-15T17:27:13Z | 200 | 	 1.185517188s | 13.231.232.235:3000 | GET /src/images/DCKuPkdXYAA0jiO.jpg
+[negroni] 2019-12-15T17:27:15Z | 200 | 	 199.819µs | 13.231.232.235:3000 | GET /favicon.ico
