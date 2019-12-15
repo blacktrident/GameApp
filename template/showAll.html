@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Show All Games</title>
+    <title>Add Game</title>
     <link rel="icon" href="src/img/favicon.png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="src/css/bootstrap.min.css">
@@ -51,29 +51,31 @@
 </div>
 
 {{ range .Games }}
-<div class="col-lg-2 col-sm-6">
-    <div class="single_post post_1">
-        <div class="single_post_img">
-            <img src="{{.BoxArt}}" alt="">
-        </div>
-        <div class="single_post_text text-center">
-            <h5>Name : {{.Name}}</h5>
-            <br>
-            <h5>Platform : {{.Platform}}</h5>
-            <br>
-            <h5>Genre : {{.Genre}}</h5>
-            <br>
-            <h5>Release Date : {{.ReleaseDate}}</h5>
-            <br>
-            <h5>No of Players : {{.NoOfPlayers}}</h5>
-            <br>
-            <h5>Publisher : {{.Publisher}}</h5>
-            <br>
+    <div class="col-lg-2 col-sm-6">
+        <div class="single_post post_1">
+            <div class="single_post_img">
+                <img src="{{.BoxArt}}" alt="">
+            </div>
+            <div class="single_post_text text-center">
+                <h5>Name : {{.Name}}</h5>
+                <br>
+                <h5>Platform : {{.Platform}}</h5>
+                <br>
+                <h5>Genre : {{.Genre}}</h5>
+                <br>
+                <h5>Release Date : {{.ReleaseDate}}</h5>
+                <br>
+                <h5>No of Players : {{.NoOfPlayers}}</h5>
+                <br>
+                <h5>Publisher : {{.Publisher}}</h5>
+                <br>
+            </div>
         </div>
     </div>
-</div>
 {{ end }}
 
 <img src ="/src/images/image001.png">
+
+
 </body>
 </html>

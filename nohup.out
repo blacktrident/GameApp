@@ -1,0 +1,480 @@
+2019/12/15 16:02:14 Listening:
+[negroni] listening on :3000
+signal: interrupt
+2019/12/15 16:03:07 Listening:
+[negroni] listening on :3000
+signal: interrupt
+2019/12/15 16:04:22 Listening:
+[negroni] listening on :3000
+[negroni] 2019-12-15T16:04:49Z | 200 | 	 165.952µs | 13.231.232.235:3000 | GET /
+[negroni] 2019-12-15T16:04:49Z | 200 | 	 85.59µs | 13.231.232.235:3000 | GET /src/css/owl.carousel.min.css
+[negroni] 2019-12-15T16:04:49Z | 200 | 	 172.674µs | 13.231.232.235:3000 | GET /src/css/themify-icons.css
+[negroni] 2019-12-15T16:04:49Z | 200 | 	 29.86086ms | 13.231.232.235:3000 | GET /src/css/bootstrap.min.css
+[negroni] 2019-12-15T16:04:49Z | 200 | 	 91.931µs | 13.231.232.235:3000 | GET /src/css/liner_icon.css
+[negroni] 2019-12-15T16:04:49Z | 200 | 	 73.992µs | 13.231.232.235:3000 | GET /src/css/search.css
+[negroni] 2019-12-15T16:04:49Z | 200 | 	 27.514422ms | 13.231.232.235:3000 | GET /src/css/animate.css
+[negroni] 2019-12-15T16:04:49Z | 200 | 	 276.499µs | 13.231.232.235:3000 | GET /src/images/image001.png
+[negroni] 2019-12-15T16:04:49Z | 200 | 	 83.010471ms | 13.231.232.235:3000 | GET /src/css/style.css
+[negroni] 2019-12-15T16:04:50Z | 404 | 	 59.942µs | 13.231.232.235:3000 | GET /src/img/favicon.png
+[negroni] 2019-12-15T16:04:58Z | 200 | 	 219.344µs | 13.231.232.235:3000 | GET /
+[negroni] 2019-12-15T16:04:58Z | 200 | 	 203.443µs | 13.231.232.235:3000 | GET /
+[negroni] 2019-12-15T16:04:59Z | 200 | 	 228.231µs | 13.231.232.235:3000 | GET /add
+2019/12/15 16:05:00 Here
+2019/12/15 16:05:02 [{ObjectIdHex("5df656112d85761c6180fec1") GOD OF WAR PS4 FIGHTING 01-JUL-2018 4 Sony Interactive Entertainment ./src/images/GOD OF WAR.jpeg}]
+[negroni] PANIC: runtime error: invalid memory address or nil pointer dereference
+goroutine 15 [running]:
+github.com/urfave/negroni.(*Recovery).ServeHTTP.func1(0x7f4525cc5ff8, 0xc000151148, 0xc0000b0370, 0xc0001e4400)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/recovery.go:159 +0xcb
+panic(0x85e160, 0xc5a950)
+	/usr/local/go/src/runtime/panic.go:679 +0x1b2
+html/template.(*Template).escape(0x0, 0x0, 0x0)
+	/usr/local/go/src/html/template/template.go:95 +0x42
+html/template.(*Template).Execute(0x0, 0x7f4525cc6028, 0xc000151148, 0x874ea0, 0xc0001e79b0, 0x97f180, 0xc0001e7980)
+	/usr/local/go/src/html/template/template.go:119 +0x2f
+github.com/blacktrident/go-mvc/controller.ShowAllController(0x7f4525cc5ff8, 0xc000151148, 0xc0001e4400)
+	/home/ubuntu/go-mvc/controller/controllers.go:95 +0x245
+net/http.HandlerFunc.ServeHTTP(0x8ffe68, 0x7f4525cc5ff8, 0xc000151148, 0xc0001e4400)
+	/usr/local/go/src/net/http/server.go:2007 +0x44
+github.com/gorilla/pat.(*Router).ServeHTTP(0xc0000e0000, 0x7f4525cc5ff8, 0xc000151148, 0xc0001e4400)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/gorilla/pat@v1.0.1/pat.go:92 +0x27d
+github.com/urfave/negroni.Wrap.func1(0x7f4525cc5ff8, 0xc000151148, 0xc0001e4400, 0xc0001757a0)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:46 +0x4d
+github.com/urfave/negroni.HandlerFunc.ServeHTTP(0xc00000e740, 0x7f4525cc5ff8, 0xc000151148, 0xc0001e4400, 0xc0001757a0)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:29 +0x4e
+github.com/urfave/negroni.middleware.ServeHTTP(0x97f7e0, 0xc00000e740, 0xc00000e7c0, 0x7f4525cc5ff8, 0xc000151148, 0xc0001e4400)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Static).ServeHTTP(0xc0000e4180, 0x7f4525cc5ff8, 0xc000151148, 0xc0001e4400, 0xc000175780)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/static.go:53 +0x6a5
+github.com/urfave/negroni.middleware.ServeHTTP(0x97ea20, 0xc0000e4180, 0xc00000e7a0, 0x7f4525cc5ff8, 0xc000151148, 0xc0001e4400)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Logger).ServeHTTP(0xc000081bf0, 0x7f4525cc5ff8, 0xc000151148, 0xc0001e4400, 0xc000175760)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/logger.go:62 +0x8e
+github.com/urfave/negroni.middleware.ServeHTTP(0x97e9c0, 0xc000081bf0, 0xc00000e780, 0x7f4525cc5ff8, 0xc000151148, 0xc0001e4400)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Recovery).ServeHTTP(0xc0000b0370, 0x7f4525cc5ff8, 0xc000151148, 0xc0001e4400, 0xc000175740)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/recovery.go:193 +0xae
+github.com/urfave/negroni.middleware.ServeHTTP(0x97ea00, 0xc0000b0370, 0xc00000e760, 0x7f4525cc5ff8, 0xc000151148, 0xc0001e4400)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Negroni).ServeHTTP(0xc0000e41e0, 0x9863a0, 0xc0000e6fc0, 0xc0001e4400)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:96 +0xeb
+net/http.serverHandler.ServeHTTP(0xc0000e6000, 0x9863a0, 0xc0000e6fc0, 0xc0001e4400)
+	/usr/local/go/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000116320, 0x986f20, 0xc000063880)
+	/usr/local/go/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2927 +0x38e
+[negroni] 2019-12-15T16:05:02Z | 200 | 	 207.19µs | 13.231.232.235:3000 | GET /favicon.ico
+[negroni] 2019-12-15T16:05:06Z | 200 | 	 188.309µs | 13.231.232.235:3000 | GET /
+[negroni] 2019-12-15T16:05:07Z | 200 | 	 215.301µs | 13.231.232.235:3000 | GET /add
+[negroni] PANIC: runtime error: invalid memory address or nil pointer dereference
+goroutine 15 [running]:
+github.com/urfave/negroni.(*Recovery).ServeHTTP.func1(0x7f4525cc5ff8, 0xc0001512b8, 0xc0000b0370, 0xc0001e4e00)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/recovery.go:159 +0xcb
+panic(0x85e160, 0xc5a950)
+	/usr/local/go/src/runtime/panic.go:679 +0x1b2
+html/template.(*Template).escape(0x0, 0x0, 0x0)
+	/usr/local/go/src/html/template/template.go:95 +0x42
+html/template.(*Template).Execute(0x0, 0x7f4525cc6028, 0xc0001512b8, 0x8665c0, 0xc00017dcd0, 0x97f180, 0xc000254de0)
+	/usr/local/go/src/html/template/template.go:119 +0x2f
+github.com/blacktrident/go-mvc/controller.ShowController(0x7f4525cc5ff8, 0xc0001512b8, 0xc0001e4e00)
+	/home/ubuntu/go-mvc/controller/controllers.go:79 +0x125
+net/http.HandlerFunc.ServeHTTP(0x8ffe70, 0x7f4525cc5ff8, 0xc0001512b8, 0xc0001e4e00)
+	/usr/local/go/src/net/http/server.go:2007 +0x44
+github.com/gorilla/pat.(*Router).ServeHTTP(0xc0000e0000, 0x7f4525cc5ff8, 0xc0001512b8, 0xc0001e4e00)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/gorilla/pat@v1.0.1/pat.go:92 +0x27d
+github.com/urfave/negroni.Wrap.func1(0x7f4525cc5ff8, 0xc0001512b8, 0xc0001e4e00, 0xc000234c80)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:46 +0x4d
+github.com/urfave/negroni.HandlerFunc.ServeHTTP(0xc00000e740, 0x7f4525cc5ff8, 0xc0001512b8, 0xc0001e4e00, 0xc000234c80)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:29 +0x4e
+github.com/urfave/negroni.middleware.ServeHTTP(0x97f7e0, 0xc00000e740, 0xc00000e7c0, 0x7f4525cc5ff8, 0xc0001512b8, 0xc0001e4e00)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Static).ServeHTTP(0xc0000e4180, 0x7f4525cc5ff8, 0xc0001512b8, 0xc0001e4e00, 0xc000234c60)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/static.go:53 +0x6a5
+github.com/urfave/negroni.middleware.ServeHTTP(0x97ea20, 0xc0000e4180, 0xc00000e7a0, 0x7f4525cc5ff8, 0xc0001512b8, 0xc0001e4e00)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Logger).ServeHTTP(0xc000081bf0, 0x7f4525cc5ff8, 0xc0001512b8, 0xc0001e4e00, 0xc000234c40)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/logger.go:62 +0x8e
+github.com/urfave/negroni.middleware.ServeHTTP(0x97e9c0, 0xc000081bf0, 0xc00000e780, 0x7f4525cc5ff8, 0xc0001512b8, 0xc0001e4e00)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Recovery).ServeHTTP(0xc0000b0370, 0x7f4525cc5ff8, 0xc0001512b8, 0xc0001e4e00, 0xc000234c20)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/recovery.go:193 +0xae
+github.com/urfave/negroni.middleware.ServeHTTP(0x97ea00, 0xc0000b0370, 0xc00000e760, 0x7f4525cc5ff8, 0xc0001512b8, 0xc0001e4e00)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Negroni).ServeHTTP(0xc0000e41e0, 0x9863a0, 0xc0002561c0, 0xc0001e4e00)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:96 +0xeb
+net/http.serverHandler.ServeHTTP(0xc0000e6000, 0x9863a0, 0xc0002561c0, 0xc0001e4e00)
+	/usr/local/go/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000116320, 0x986f20, 0xc000063880)
+	/usr/local/go/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2927 +0x38e
+[negroni] 2019-12-15T16:05:08Z | 200 | 	 199.288µs | 13.231.232.235:3000 | GET /favicon.ico
+[negroni] 2019-12-15T16:05:28Z | 200 | 	 221.868µs | 13.231.232.235:3000 | GET /add
+[negroni] 2019-12-15T16:05:36Z | 200 | 	 219.35µs | 13.231.232.235:3000 | GET /add
+[negroni] 2019-12-15T16:05:37Z | 200 | 	 189.109µs | 13.231.232.235:3000 | GET /
+[negroni] 2019-12-15T16:05:38Z | 200 | 	 206.813µs | 13.231.232.235:3000 | GET /
+[negroni] 2019-12-15T16:05:39Z | 200 | 	 226.292µs | 13.231.232.235:3000 | GET /add
+2019/12/15 16:05:40 Here
+[negroni] PANIC: runtime error: invalid memory address or nil pointer dereference
+goroutine 11 [running]:
+github.com/urfave/negroni.(*Recovery).ServeHTTP.func1(0x7f4525cc5ff8, 0xc000151468, 0xc0000b0370, 0xc0000d3900)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/recovery.go:159 +0xcb
+panic(0x85e160, 0xc5a950)
+	/usr/local/go/src/runtime/panic.go:679 +0x1b2
+html/template.(*Template).escape(0x0, 0x0, 0x0)
+	/usr/local/go/src/html/template/template.go:95 +0x42
+html/template.(*Template).Execute(0x0, 0x7f4525cc6028, 0xc000151468, 0x8665c0, 0xc00026f010, 0x97f180, 0xc00028e510)
+	/usr/local/go/src/html/template/template.go:119 +0x2f
+github.com/blacktrident/go-mvc/controller.ShowController(0x7f4525cc5ff8, 0xc000151468, 0xc0000d3900)
+	/home/ubuntu/go-mvc/controller/controllers.go:79 +0x125
+net/http.HandlerFunc.ServeHTTP(0x8ffe70, 0x7f4525cc5ff8, 0xc000151468, 0xc0000d3900)
+	/usr/local/go/src/net/http/server.go:2007 +0x44
+github.com/gorilla/pat.(*Router).ServeHTTP(0xc0000e0000, 0x7f4525cc5ff8, 0xc000151468, 0xc0000d3900)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/gorilla/pat@v1.0.1/pat.go:92 +0x27d
+github.com/urfave/negroni.Wrap.func1(0x7f4525cc5ff8, 0xc000151468, 0xc0000d3900, 0xc000296060)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:46 +0x4d
+github.com/urfave/negroni.HandlerFunc.ServeHTTP(0xc00000e740, 0x7f4525cc5ff8, 0xc000151468, 0xc0000d3900, 0xc000296060)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:29 +0x4e
+github.com/urfave/negroni.middleware.ServeHTTP(0x97f7e0, 0xc00000e740, 0xc00000e7c0, 0x7f4525cc5ff8, 0xc000151468, 0xc0000d3900)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Static).ServeHTTP(0xc0000e4180, 0x7f4525cc5ff8, 0xc000151468, 0xc0000d3900, 0xc000296040)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/static.go:53 +0x6a5
+github.com/urfave/negroni.middleware.ServeHTTP(0x97ea20, 0xc0000e4180, 0xc00000e7a0, 0x7f4525cc5ff8, 0xc000151468, 0xc0000d3900)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Logger).ServeHTTP(0xc000081bf0, 0x7f4525cc5ff8, 0xc000151468, 0xc0000d3900, 0xc000296020)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/logger.go:62 +0x8e
+github.com/urfave/negroni.middleware.ServeHTTP(0x97e9c0, 0xc000081bf0, 0xc00000e780, 0x7f4525cc5ff8, 0xc000151468, 0xc0000d3900)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Recovery).ServeHTTP(0xc0000b0370, 0x7f4525cc5ff8, 0xc000151468, 0xc0000d3900, 0xc000296000)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/recovery.go:193 +0xae
+github.com/urfave/negroni.middleware.ServeHTTP(0x97ea00, 0xc0000b0370, 0xc00000e760, 0x7f4525cc5ff8, 0xc000151468, 0xc0000d3900)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Negroni).ServeHTTP(0xc0000e41e0, 0x9863a0, 0xc000257880, 0xc0000d3900)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:96 +0xeb
+net/http.serverHandler.ServeHTTP(0xc0000e6000, 0x9863a0, 0xc000257880, 0xc0000d3900)
+	/usr/local/go/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000116000, 0x986f20, 0xc000062900)
+	/usr/local/go/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2927 +0x38e
+[negroni] 2019-12-15T16:05:41Z | 200 | 	 215.271µs | 13.231.232.235:3000 | GET /favicon.ico
+2019/12/15 16:05:41 []
+[negroni] PANIC: runtime error: invalid memory address or nil pointer dereference
+goroutine 15 [running]:
+github.com/urfave/negroni.(*Recovery).ServeHTTP.func1(0x7f4525cc5ff8, 0xc0001513c0, 0xc0000b0370, 0xc0001e5b00)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/recovery.go:159 +0xcb
+panic(0x85e160, 0xc5a950)
+	/usr/local/go/src/runtime/panic.go:679 +0x1b2
+html/template.(*Template).escape(0x0, 0x0, 0x0)
+	/usr/local/go/src/html/template/template.go:95 +0x42
+html/template.(*Template).Execute(0x0, 0x7f4525cc6028, 0xc0001513c0, 0x874ea0, 0xc00028ec60, 0x97f180, 0xc00028ec30)
+	/usr/local/go/src/html/template/template.go:119 +0x2f
+github.com/blacktrident/go-mvc/controller.ShowAllController(0x7f4525cc5ff8, 0xc0001513c0, 0xc0001e5b00)
+	/home/ubuntu/go-mvc/controller/controllers.go:95 +0x245
+net/http.HandlerFunc.ServeHTTP(0x8ffe68, 0x7f4525cc5ff8, 0xc0001513c0, 0xc0001e5b00)
+	/usr/local/go/src/net/http/server.go:2007 +0x44
+github.com/gorilla/pat.(*Router).ServeHTTP(0xc0000e0000, 0x7f4525cc5ff8, 0xc0001513c0, 0xc0001e5b00)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/gorilla/pat@v1.0.1/pat.go:92 +0x27d
+github.com/urfave/negroni.Wrap.func1(0x7f4525cc5ff8, 0xc0001513c0, 0xc0001e5b00, 0xc000235680)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:46 +0x4d
+github.com/urfave/negroni.HandlerFunc.ServeHTTP(0xc00000e740, 0x7f4525cc5ff8, 0xc0001513c0, 0xc0001e5b00, 0xc000235680)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:29 +0x4e
+github.com/urfave/negroni.middleware.ServeHTTP(0x97f7e0, 0xc00000e740, 0xc00000e7c0, 0x7f4525cc5ff8, 0xc0001513c0, 0xc0001e5b00)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Static).ServeHTTP(0xc0000e4180, 0x7f4525cc5ff8, 0xc0001513c0, 0xc0001e5b00, 0xc000235660)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/static.go:53 +0x6a5
+github.com/urfave/negroni.middleware.ServeHTTP(0x97ea20, 0xc0000e4180, 0xc00000e7a0, 0x7f4525cc5ff8, 0xc0001513c0, 0xc0001e5b00)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Logger).ServeHTTP(0xc000081bf0, 0x7f4525cc5ff8, 0xc0001513c0, 0xc0001e5b00, 0xc000235640)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/logger.go:62 +0x8e
+github.com/urfave/negroni.middleware.ServeHTTP(0x97e9c0, 0xc000081bf0, 0xc00000e780, 0x7f4525cc5ff8, 0xc0001513c0, 0xc0001e5b00)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Recovery).ServeHTTP(0xc0000b0370, 0x7f4525cc5ff8, 0xc0001513c0, 0xc0001e5b00, 0xc000235620)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/recovery.go:193 +0xae
+github.com/urfave/negroni.middleware.ServeHTTP(0x97ea00, 0xc0000b0370, 0xc00000e760, 0x7f4525cc5ff8, 0xc0001513c0, 0xc0001e5b00)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Negroni).ServeHTTP(0xc0000e41e0, 0x9863a0, 0xc000256c40, 0xc0001e5b00)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:96 +0xeb
+net/http.serverHandler.ServeHTTP(0xc0000e6000, 0x9863a0, 0xc000256c40, 0xc0001e5b00)
+	/usr/local/go/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000116320, 0x986f20, 0xc000063880)
+	/usr/local/go/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2927 +0x38e
+[negroni] PANIC: runtime error: invalid memory address or nil pointer dereference
+goroutine 11 [running]:
+github.com/urfave/negroni.(*Recovery).ServeHTTP.func1(0x7f4525cc5ff8, 0xc000151488, 0xc0000b0370, 0xc00029e000)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/recovery.go:159 +0xcb
+panic(0x85e160, 0xc5a950)
+	/usr/local/go/src/runtime/panic.go:679 +0x1b2
+html/template.(*Template).escape(0x0, 0x0, 0x0)
+	/usr/local/go/src/html/template/template.go:95 +0x42
+html/template.(*Template).Execute(0x0, 0x7f4525cc6028, 0xc000151488, 0x8665c0, 0xc00026f1e0, 0x97f180, 0xc00028ede0)
+	/usr/local/go/src/html/template/template.go:119 +0x2f
+github.com/blacktrident/go-mvc/controller.ShowController(0x7f4525cc5ff8, 0xc000151488, 0xc00029e000)
+	/home/ubuntu/go-mvc/controller/controllers.go:79 +0x125
+net/http.HandlerFunc.ServeHTTP(0x8ffe70, 0x7f4525cc5ff8, 0xc000151488, 0xc00029e000)
+	/usr/local/go/src/net/http/server.go:2007 +0x44
+github.com/gorilla/pat.(*Router).ServeHTTP(0xc0000e0000, 0x7f4525cc5ff8, 0xc000151488, 0xc00029e000)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/gorilla/pat@v1.0.1/pat.go:92 +0x27d
+github.com/urfave/negroni.Wrap.func1(0x7f4525cc5ff8, 0xc000151488, 0xc00029e000, 0xc000296360)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:46 +0x4d
+github.com/urfave/negroni.HandlerFunc.ServeHTTP(0xc00000e740, 0x7f4525cc5ff8, 0xc000151488, 0xc00029e000, 0xc000296360)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:29 +0x4e
+github.com/urfave/negroni.middleware.ServeHTTP(0x97f7e0, 0xc00000e740, 0xc00000e7c0, 0x7f4525cc5ff8, 0xc000151488, 0xc00029e000)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Static).ServeHTTP(0xc0000e4180, 0x7f4525cc5ff8, 0xc000151488, 0xc00029e000, 0xc000296340)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/static.go:53 +0x6a5
+github.com/urfave/negroni.middleware.ServeHTTP(0x97ea20, 0xc0000e4180, 0xc00000e7a0, 0x7f4525cc5ff8, 0xc000151488, 0xc00029e000)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Logger).ServeHTTP(0xc000081bf0, 0x7f4525cc5ff8, 0xc000151488, 0xc00029e000, 0xc000296320)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/logger.go:62 +0x8e
+github.com/urfave/negroni.middleware.ServeHTTP(0x97e9c0, 0xc000081bf0, 0xc00000e780, 0x7f4525cc5ff8, 0xc000151488, 0xc00029e000)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Recovery).ServeHTTP(0xc0000b0370, 0x7f4525cc5ff8, 0xc000151488, 0xc00029e000, 0xc000296300)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/recovery.go:193 +0xae
+github.com/urfave/negroni.middleware.ServeHTTP(0x97ea00, 0xc0000b0370, 0xc00000e760, 0x7f4525cc5ff8, 0xc000151488, 0xc00029e000)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Negroni).ServeHTTP(0xc0000e41e0, 0x9863a0, 0xc000257b20, 0xc00029e000)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:96 +0xeb
+net/http.serverHandler.ServeHTTP(0xc0000e6000, 0x9863a0, 0xc000257b20, 0xc00029e000)
+	/usr/local/go/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000116000, 0x986f20, 0xc000062900)
+	/usr/local/go/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2927 +0x38e
+[negroni] 2019-12-15T16:05:43Z | 200 | 	 211.111µs | 13.231.232.235:3000 | GET /favicon.ico
+[negroni] PANIC: runtime error: invalid memory address or nil pointer dereference
+goroutine 11 [running]:
+github.com/urfave/negroni.(*Recovery).ServeHTTP.func1(0x7f4525cc5ff8, 0xc000151508, 0xc0000b0370, 0xc00029e400)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/recovery.go:159 +0xcb
+panic(0x85e160, 0xc5a950)
+	/usr/local/go/src/runtime/panic.go:679 +0x1b2
+html/template.(*Template).escape(0x0, 0x0, 0x0)
+	/usr/local/go/src/html/template/template.go:95 +0x42
+html/template.(*Template).Execute(0x0, 0x7f4525cc6028, 0xc000151508, 0x8665c0, 0xc00026f930, 0x97f180, 0xc00028fc50)
+	/usr/local/go/src/html/template/template.go:119 +0x2f
+github.com/blacktrident/go-mvc/controller.ShowController(0x7f4525cc5ff8, 0xc000151508, 0xc00029e400)
+	/home/ubuntu/go-mvc/controller/controllers.go:79 +0x125
+net/http.HandlerFunc.ServeHTTP(0x8ffe70, 0x7f4525cc5ff8, 0xc000151508, 0xc00029e400)
+	/usr/local/go/src/net/http/server.go:2007 +0x44
+github.com/gorilla/pat.(*Router).ServeHTTP(0xc0000e0000, 0x7f4525cc5ff8, 0xc000151508, 0xc00029e400)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/gorilla/pat@v1.0.1/pat.go:92 +0x27d
+github.com/urfave/negroni.Wrap.func1(0x7f4525cc5ff8, 0xc000151508, 0xc00029e400, 0xc0002969e0)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:46 +0x4d
+github.com/urfave/negroni.HandlerFunc.ServeHTTP(0xc00000e740, 0x7f4525cc5ff8, 0xc000151508, 0xc00029e400, 0xc0002969e0)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:29 +0x4e
+github.com/urfave/negroni.middleware.ServeHTTP(0x97f7e0, 0xc00000e740, 0xc00000e7c0, 0x7f4525cc5ff8, 0xc000151508, 0xc00029e400)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Static).ServeHTTP(0xc0000e4180, 0x7f4525cc5ff8, 0xc000151508, 0xc00029e400, 0xc0002969c0)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/static.go:53 +0x6a5
+github.com/urfave/negroni.middleware.ServeHTTP(0x97ea20, 0xc0000e4180, 0xc00000e7a0, 0x7f4525cc5ff8, 0xc000151508, 0xc00029e400)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Logger).ServeHTTP(0xc000081bf0, 0x7f4525cc5ff8, 0xc000151508, 0xc00029e400, 0xc0002969a0)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/logger.go:62 +0x8e
+github.com/urfave/negroni.middleware.ServeHTTP(0x97e9c0, 0xc000081bf0, 0xc00000e780, 0x7f4525cc5ff8, 0xc000151508, 0xc00029e400)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Recovery).ServeHTTP(0xc0000b0370, 0x7f4525cc5ff8, 0xc000151508, 0xc00029e400, 0xc000296980)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/recovery.go:193 +0xae
+github.com/urfave/negroni.middleware.ServeHTTP(0x97ea00, 0xc0000b0370, 0xc00000e760, 0x7f4525cc5ff8, 0xc000151508, 0xc00029e400)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Negroni).ServeHTTP(0xc0000e41e0, 0x9863a0, 0xc00023e2a0, 0xc00029e400)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:96 +0xeb
+net/http.serverHandler.ServeHTTP(0xc0000e6000, 0x9863a0, 0xc00023e2a0, 0xc00029e400)
+	/usr/local/go/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000116000, 0x986f20, 0xc000062900)
+	/usr/local/go/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2927 +0x38e
+[negroni] 2019-12-15T16:06:05Z | 200 | 	 184.867µs | 13.231.232.235:3000 | GET /favicon.ico
+2019/12/15 16:06:09 Here
+[negroni] 2019-12-15T16:06:10Z | 200 | 	 220.796µs | 13.231.232.235:3000 | GET /add
+2019/12/15 16:06:11 []
+[negroni] PANIC: runtime error: invalid memory address or nil pointer dereference
+goroutine 11 [running]:
+github.com/urfave/negroni.(*Recovery).ServeHTTP.func1(0x7f4525cc5ff8, 0xc000151528, 0xc0000b0370, 0xc00029e700)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/recovery.go:159 +0xcb
+panic(0x85e160, 0xc5a950)
+	/usr/local/go/src/runtime/panic.go:679 +0x1b2
+html/template.(*Template).escape(0x0, 0x0, 0x0)
+	/usr/local/go/src/html/template/template.go:95 +0x42
+html/template.(*Template).Execute(0x0, 0x7f4525cc6028, 0xc000151528, 0x874ea0, 0xc0002b33b0, 0x97f180, 0xc0002b3380)
+	/usr/local/go/src/html/template/template.go:119 +0x2f
+github.com/blacktrident/go-mvc/controller.ShowAllController(0x7f4525cc5ff8, 0xc000151528, 0xc00029e700)
+	/home/ubuntu/go-mvc/controller/controllers.go:95 +0x245
+net/http.HandlerFunc.ServeHTTP(0x8ffe68, 0x7f4525cc5ff8, 0xc000151528, 0xc00029e700)
+	/usr/local/go/src/net/http/server.go:2007 +0x44
+github.com/gorilla/pat.(*Router).ServeHTTP(0xc0000e0000, 0x7f4525cc5ff8, 0xc000151528, 0xc00029e700)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/gorilla/pat@v1.0.1/pat.go:92 +0x27d
+github.com/urfave/negroni.Wrap.func1(0x7f4525cc5ff8, 0xc000151528, 0xc00029e700, 0xc000296b80)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:46 +0x4d
+github.com/urfave/negroni.HandlerFunc.ServeHTTP(0xc00000e740, 0x7f4525cc5ff8, 0xc000151528, 0xc00029e700, 0xc000296b80)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:29 +0x4e
+github.com/urfave/negroni.middleware.ServeHTTP(0x97f7e0, 0xc00000e740, 0xc00000e7c0, 0x7f4525cc5ff8, 0xc000151528, 0xc00029e700)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Static).ServeHTTP(0xc0000e4180, 0x7f4525cc5ff8, 0xc000151528, 0xc00029e700, 0xc000296b60)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/static.go:53 +0x6a5
+github.com/urfave/negroni.middleware.ServeHTTP(0x97ea20, 0xc0000e4180, 0xc00000e7a0, 0x7f4525cc5ff8, 0xc000151528, 0xc00029e700)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Logger).ServeHTTP(0xc000081bf0, 0x7f4525cc5ff8, 0xc000151528, 0xc00029e700, 0xc000296b40)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/logger.go:62 +0x8e
+github.com/urfave/negroni.middleware.ServeHTTP(0x97e9c0, 0xc000081bf0, 0xc00000e780, 0x7f4525cc5ff8, 0xc000151528, 0xc00029e700)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Recovery).ServeHTTP(0xc0000b0370, 0x7f4525cc5ff8, 0xc000151528, 0xc00029e700, 0xc000296b20)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/recovery.go:193 +0xae
+github.com/urfave/negroni.middleware.ServeHTTP(0x97ea00, 0xc0000b0370, 0xc00000e760, 0x7f4525cc5ff8, 0xc000151528, 0xc00029e700)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Negroni).ServeHTTP(0xc0000e41e0, 0x9863a0, 0xc00023e460, 0xc00029e700)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:96 +0xeb
+net/http.serverHandler.ServeHTTP(0xc0000e6000, 0x9863a0, 0xc00023e460, 0xc00029e700)
+	/usr/local/go/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000116000, 0x986f20, 0xc000062900)
+	/usr/local/go/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2927 +0x38e
+[negroni] 2019-12-15T16:06:11Z | 200 | 	 183.587µs | 13.231.232.235:3000 | GET /
+[negroni] 2019-12-15T16:06:11Z | 304 | 	 75.779µs | 13.231.232.235:3000 | GET /src/css/bootstrap.min.css
+[negroni] 2019-12-15T16:06:11Z | 304 | 	 48.53µs | 13.231.232.235:3000 | GET /src/css/animate.css
+[negroni] 2019-12-15T16:06:11Z | 304 | 	 35.701µs | 13.231.232.235:3000 | GET /src/css/themify-icons.css
+[negroni] 2019-12-15T16:06:11Z | 304 | 	 59.94µs | 13.231.232.235:3000 | GET /src/css/owl.carousel.min.css
+[negroni] 2019-12-15T16:06:11Z | 304 | 	 30.301µs | 13.231.232.235:3000 | GET /src/css/liner_icon.css
+[negroni] 2019-12-15T16:06:11Z | 304 | 	 32.243µs | 13.231.232.235:3000 | GET /src/css/search.css
+[negroni] 2019-12-15T16:06:11Z | 304 | 	 39.09µs | 13.231.232.235:3000 | GET /src/css/style.css
+[negroni] 2019-12-15T16:06:12Z | 200 | 	 221.43µs | 13.231.232.235:3000 | GET /add
+[negroni] 2019-12-15T16:06:12Z | 304 | 	 69.971µs | 13.231.232.235:3000 | GET /src/images/image001.png
+2019/12/15 16:06:12 Here
+2019/12/15 16:06:13 Here
+2019/12/15 16:06:14 []
+[negroni] PANIC: runtime error: invalid memory address or nil pointer dereference
+goroutine 14 [running]:
+github.com/urfave/negroni.(*Recovery).ServeHTTP.func1(0x7f4525cc5ff8, 0xc000151718, 0xc0000b0370, 0xc0002e6200)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/recovery.go:159 +0xcb
+panic(0x85e160, 0xc5a950)
+	/usr/local/go/src/runtime/panic.go:679 +0x1b2
+html/template.(*Template).escape(0x0, 0x0, 0x0)
+	/usr/local/go/src/html/template/template.go:95 +0x42
+html/template.(*Template).Execute(0x0, 0x7f4525cc6028, 0xc000151718, 0x874ea0, 0xc0002ee810, 0x97f180, 0xc0002ee7e0)
+	/usr/local/go/src/html/template/template.go:119 +0x2f
+github.com/blacktrident/go-mvc/controller.ShowAllController(0x7f4525cc5ff8, 0xc000151718, 0xc0002e6200)
+	/home/ubuntu/go-mvc/controller/controllers.go:95 +0x245
+net/http.HandlerFunc.ServeHTTP(0x8ffe68, 0x7f4525cc5ff8, 0xc000151718, 0xc0002e6200)
+	/usr/local/go/src/net/http/server.go:2007 +0x44
+github.com/gorilla/pat.(*Router).ServeHTTP(0xc0000e0000, 0x7f4525cc5ff8, 0xc000151718, 0xc0002e6200)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/gorilla/pat@v1.0.1/pat.go:92 +0x27d
+github.com/urfave/negroni.Wrap.func1(0x7f4525cc5ff8, 0xc000151718, 0xc0002e6200, 0xc0002dc1e0)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:46 +0x4d
+github.com/urfave/negroni.HandlerFunc.ServeHTTP(0xc00000e740, 0x7f4525cc5ff8, 0xc000151718, 0xc0002e6200, 0xc0002dc1e0)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:29 +0x4e
+github.com/urfave/negroni.middleware.ServeHTTP(0x97f7e0, 0xc00000e740, 0xc00000e7c0, 0x7f4525cc5ff8, 0xc000151718, 0xc0002e6200)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Static).ServeHTTP(0xc0000e4180, 0x7f4525cc5ff8, 0xc000151718, 0xc0002e6200, 0xc0002dc1c0)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/static.go:53 +0x6a5
+github.com/urfave/negroni.middleware.ServeHTTP(0x97ea20, 0xc0000e4180, 0xc00000e7a0, 0x7f4525cc5ff8, 0xc000151718, 0xc0002e6200)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Logger).ServeHTTP(0xc000081bf0, 0x7f4525cc5ff8, 0xc000151718, 0xc0002e6200, 0xc0002dc1a0)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/logger.go:62 +0x8e
+github.com/urfave/negroni.middleware.ServeHTTP(0x97e9c0, 0xc000081bf0, 0xc00000e780, 0x7f4525cc5ff8, 0xc000151718, 0xc0002e6200)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Recovery).ServeHTTP(0xc0000b0370, 0x7f4525cc5ff8, 0xc000151718, 0xc0002e6200, 0xc0002dc180)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/recovery.go:193 +0xae
+github.com/urfave/negroni.middleware.ServeHTTP(0x97ea00, 0xc0000b0370, 0xc00000e760, 0x7f4525cc5ff8, 0xc000151718, 0xc0002e6200)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Negroni).ServeHTTP(0xc0000e41e0, 0x9863a0, 0xc00023fdc0, 0xc0002e6200)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:96 +0xeb
+net/http.serverHandler.ServeHTTP(0xc0000e6000, 0x9863a0, 0xc00023fdc0, 0xc0002e6200)
+	/usr/local/go/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000116280, 0x986f20, 0xc000063940)
+	/usr/local/go/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2927 +0x38e
+2019/12/15 16:06:14 []
+[negroni] PANIC: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+github.com/urfave/negroni.(*Recovery).ServeHTTP.func1(0x7f4525cc5ff8, 0xc0001517b0, 0xc0000b0370, 0xc00029f600)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/recovery.go:159 +0xcb
+panic(0x85e160, 0xc5a950)
+	/usr/local/go/src/runtime/panic.go:679 +0x1b2
+html/template.(*Template).escape(0x0, 0x0, 0x0)
+	/usr/local/go/src/html/template/template.go:95 +0x42
+html/template.(*Template).Execute(0x0, 0x7f4525cc6028, 0xc0001517b0, 0x874ea0, 0xc0002eea20, 0x97f180, 0xc0002ee9f0)
+	/usr/local/go/src/html/template/template.go:119 +0x2f
+github.com/blacktrident/go-mvc/controller.ShowAllController(0x7f4525cc5ff8, 0xc0001517b0, 0xc00029f600)
+	/home/ubuntu/go-mvc/controller/controllers.go:95 +0x245
+net/http.HandlerFunc.ServeHTTP(0x8ffe68, 0x7f4525cc5ff8, 0xc0001517b0, 0xc00029f600)
+	/usr/local/go/src/net/http/server.go:2007 +0x44
+github.com/gorilla/pat.(*Router).ServeHTTP(0xc0000e0000, 0x7f4525cc5ff8, 0xc0001517b0, 0xc00029f600)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/gorilla/pat@v1.0.1/pat.go:92 +0x27d
+github.com/urfave/negroni.Wrap.func1(0x7f4525cc5ff8, 0xc0001517b0, 0xc00029f600, 0xc0002dca40)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:46 +0x4d
+github.com/urfave/negroni.HandlerFunc.ServeHTTP(0xc00000e740, 0x7f4525cc5ff8, 0xc0001517b0, 0xc00029f600, 0xc0002dca40)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:29 +0x4e
+github.com/urfave/negroni.middleware.ServeHTTP(0x97f7e0, 0xc00000e740, 0xc00000e7c0, 0x7f4525cc5ff8, 0xc0001517b0, 0xc00029f600)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Static).ServeHTTP(0xc0000e4180, 0x7f4525cc5ff8, 0xc0001517b0, 0xc00029f600, 0xc0002dca20)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/static.go:53 +0x6a5
+github.com/urfave/negroni.middleware.ServeHTTP(0x97ea20, 0xc0000e4180, 0xc00000e7a0, 0x7f4525cc5ff8, 0xc0001517b0, 0xc00029f600)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Logger).ServeHTTP(0xc000081bf0, 0x7f4525cc5ff8, 0xc0001517b0, 0xc00029f600, 0xc0002dca00)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/logger.go:62 +0x8e
+github.com/urfave/negroni.middleware.ServeHTTP(0x97e9c0, 0xc000081bf0, 0xc00000e780, 0x7f4525cc5ff8, 0xc0001517b0, 0xc00029f600)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Recovery).ServeHTTP(0xc0000b0370, 0x7f4525cc5ff8, 0xc0001517b0, 0xc00029f600, 0xc0002dc9e0)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/recovery.go:193 +0xae
+github.com/urfave/negroni.middleware.ServeHTTP(0x97ea00, 0xc0000b0370, 0xc00000e760, 0x7f4525cc5ff8, 0xc0001517b0, 0xc00029f600)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Negroni).ServeHTTP(0xc0000e41e0, 0x9863a0, 0xc0002ea8c0, 0xc00029f600)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:96 +0xeb
+net/http.serverHandler.ServeHTTP(0xc0000e6000, 0x9863a0, 0xc0002ea8c0, 0xc00029f600)
+	/usr/local/go/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000116460, 0x986f20, 0xc000063bc0)
+	/usr/local/go/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2927 +0x38e
+[negroni] 2019-12-15T16:06:15Z | 200 | 	 195.732µs | 13.231.232.235:3000 | GET /favicon.ico
+[negroni] 2019-12-15T16:06:49Z | 200 | 	 199.709µs | 13.231.232.235:3000 | GET /add
+[negroni] PANIC: runtime error: invalid memory address or nil pointer dereference
+goroutine 20 [running]:
+github.com/urfave/negroni.(*Recovery).ServeHTTP.func1(0x7f4525cc5ff8, 0xc000151ac8, 0xc0000b0370, 0xc0002e6d00)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/recovery.go:159 +0xcb
+panic(0x85e160, 0xc5a950)
+	/usr/local/go/src/runtime/panic.go:679 +0x1b2
+html/template.(*Template).escape(0x0, 0x0, 0x0)
+	/usr/local/go/src/html/template/template.go:95 +0x42
+html/template.(*Template).Execute(0x0, 0x7f4525cc6028, 0xc000151ac8, 0x8665c0, 0xc0003304f0, 0x97f180, 0xc000327920)
+	/usr/local/go/src/html/template/template.go:119 +0x2f
+github.com/blacktrident/go-mvc/controller.ShowController(0x7f4525cc5ff8, 0xc000151ac8, 0xc0002e6d00)
+	/home/ubuntu/go-mvc/controller/controllers.go:79 +0x125
+net/http.HandlerFunc.ServeHTTP(0x8ffe70, 0x7f4525cc5ff8, 0xc000151ac8, 0xc0002e6d00)
+	/usr/local/go/src/net/http/server.go:2007 +0x44
+github.com/gorilla/pat.(*Router).ServeHTTP(0xc0000e0000, 0x7f4525cc5ff8, 0xc000151ac8, 0xc0002e6d00)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/gorilla/pat@v1.0.1/pat.go:92 +0x27d
+github.com/urfave/negroni.Wrap.func1(0x7f4525cc5ff8, 0xc000151ac8, 0xc0002e6d00, 0xc0003230a0)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:46 +0x4d
+github.com/urfave/negroni.HandlerFunc.ServeHTTP(0xc00000e740, 0x7f4525cc5ff8, 0xc000151ac8, 0xc0002e6d00, 0xc0003230a0)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:29 +0x4e
+github.com/urfave/negroni.middleware.ServeHTTP(0x97f7e0, 0xc00000e740, 0xc00000e7c0, 0x7f4525cc5ff8, 0xc000151ac8, 0xc0002e6d00)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Static).ServeHTTP(0xc0000e4180, 0x7f4525cc5ff8, 0xc000151ac8, 0xc0002e6d00, 0xc000323080)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/static.go:53 +0x6a5
+github.com/urfave/negroni.middleware.ServeHTTP(0x97ea20, 0xc0000e4180, 0xc00000e7a0, 0x7f4525cc5ff8, 0xc000151ac8, 0xc0002e6d00)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Logger).ServeHTTP(0xc000081bf0, 0x7f4525cc5ff8, 0xc000151ac8, 0xc0002e6d00, 0xc000323060)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/logger.go:62 +0x8e
+github.com/urfave/negroni.middleware.ServeHTTP(0x97e9c0, 0xc000081bf0, 0xc00000e780, 0x7f4525cc5ff8, 0xc000151ac8, 0xc0002e6d00)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Recovery).ServeHTTP(0xc0000b0370, 0x7f4525cc5ff8, 0xc000151ac8, 0xc0002e6d00, 0xc000323040)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/recovery.go:193 +0xae
+github.com/urfave/negroni.middleware.ServeHTTP(0x97ea00, 0xc0000b0370, 0xc00000e760, 0x7f4525cc5ff8, 0xc000151ac8, 0xc0002e6d00)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:38 +0x9c
+github.com/urfave/negroni.(*Negroni).ServeHTTP(0xc0000e41e0, 0x9863a0, 0xc000318fc0, 0xc0002e6d00)
+	/home/ubuntu/Projects/Proj1/pkg/mod/github.com/urfave/negroni@v1.0.0/negroni.go:96 +0xeb
+net/http.serverHandler.ServeHTTP(0xc0000e6000, 0x9863a0, 0xc000318fc0, 0xc0002e6d00)
+	/usr/local/go/src/net/http/server.go:2802 +0xa4
+net/http.(*conn).serve(0xc000116460, 0x986f20, 0xc000063bc0)
+	/usr/local/go/src/net/http/server.go:1890 +0x875
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:2927 +0x38e
+[negroni] 2019-12-15T16:06:50Z | 200 | 	 232.903µs | 13.231.232.235:3000 | GET /favicon.ico
+[negroni] 2019-12-15T16:07:06Z | 200 | 	 201.98µs | 13.231.232.235:3000 | GET /add
+[negroni] 2019-12-15T16:07:06Z | 200 | 	 214.083µs | 13.231.232.235:3000 | GET /add
+signal: killed

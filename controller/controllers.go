@@ -54,6 +54,7 @@ func AddController(res http.ResponseWriter, req *http.Request) {
 }
 
 func ShowController(res http.ResponseWriter, req *http.Request) {
+	log.Println("Inside Show One")
 	if req.Method == "POST" {
 		req.ParseForm()
 		name := req.Form["Name"]
@@ -69,19 +70,19 @@ func ShowController(res http.ResponseWriter, req *http.Request) {
 		t, _ := template.ParseFiles("template/showOne.html")
 		t.Execute(res, data)
 	} else {
-		//log.Print("HereGet")
+		log.Print("HereGet")
 		data := struct {
 			Title string
 		}{
 			Title: "My page",
 		}
-		t, _ := template.ParseFiles("template/ShowOne.html")
+		t, _ := template.ParseFiles("template/showOne.html")
 		t.Execute(res, data)
 	}
 }
 
 func ShowAllController(res http.ResponseWriter, req *http.Request) {
-	log.Print("Here")
+	log.Print("Here Show All")
 	data := struct {
 		Title string
 		Games []model.Game
